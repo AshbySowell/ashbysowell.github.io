@@ -5,44 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AshbySowell LLC</title>
   <link rel="icon" href="favicon.png"/>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
   <style>
     .book-page {
-      max-width: 640px; /* Smaller width for book-like appearance */
-      margin: auto;
+      max-width: 640px;
+      margin: 2rem auto;
       padding: 2rem;
-      background-color: #fdf6e3; /* Off-white, paper-like background color */
-      color: #333; /* Dark text color for contrast */
-      border-radius: 8px; /* Slight rounding of corners to mimic a page */
-      box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Soft shadow for depth */
-      font-family: 'Times New Roman', serif; /* Classic book font */
-    }
-
-    header, footer {
-      text-align: center;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      border: 1px solid #ddd;
     }
   </style>
 </head>
-<body class="bg-white">
-  <header class="py-5">
-    <div class="container mx-auto">
-      <a href="#">
-        <img src="img/logo.jpeg" alt="Logo" style="height: 100px;">
-        <h1 class="text-3xl font-bold">AshbySowell LLC</h1>
-      </a>
+<body>
+  <section class="section">
+    <div class="container has-text-centered">
+      <div class="header-content">
+        <img src="img/logo.jpeg" alt="Logo" style="height: 80px;">
+        <h1 class="title is-3">AshbySowell LLC</h1>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main role="main" class="book-page">
-    <p class="text-lg">
-      AshbySowell LLC provides machine learning solutions focusing on computer vision, anomaly detection,
-      reinforcement learning, and control systems. Our team delivers cutting-edge technology to solve complex
-      problems in various industries.
-    </p>
-  </main>
+  <section class="section">
+    <div class="container book-page">
+      <p>
+        AshbySowell LLC provides machine learning solutions focusing on computer vision, anomaly detection,
+        reinforcement learning, and control systems. Our team delivers cutting-edge technology to solve complex
+        problems in various industries.
+      </p>
+    </div>
+  </section>
 
-  <footer class="border-t py-4 bg-white">
-    <div class="container mx-auto">
+  <footer class="footer">
+    <div class="content has-text-centered">
       <p>&copy; <script>document.write(new Date().getFullYear())</script> AshbySowell LLC.</p>
     </div>
   </footer>
