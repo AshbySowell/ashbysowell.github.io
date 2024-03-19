@@ -5,44 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AshbySowell LLC</title>
   <link rel="icon" href="favicon.png"/>
-  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
-  <style>
-    .book-page {
-      max-width: 640px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      border: 1px solid #ddd;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <section class="section">
-    <div class="container has-text-centered">
-      <div class="header-content">
-        <img src="img/logo.jpeg" alt="Logo" style="height: 80px;">
-        <h1 class="title is-3">AshbySowell LLC</h1>
-      </div>
-    </div>
-  </section>
+<body class="bg-white">
+  <div class="min-h-screen flex flex-col justify-center items-center">
+    <header class="text-center mb-8">
+      <img src="img/logo.jpeg" alt="Logo" class="h-20 mx-auto">
+      <h1 class="text-3xl font-semibold">AshbySowell LLC</h1>
+    </header>
 
-  <section class="section">
-    <div class="container book-page">
-      <p>
+    <main class="p-8 bg-white rounded-lg shadow-md border border-gray-300 w-3/4 md:w-1/2 lg:w-1/3">
+      <p class="text-gray-700">
         AshbySowell LLC provides machine learning solutions focusing on computer vision, anomaly detection,
         reinforcement learning, and control systems. Our team delivers cutting-edge technology to solve complex
         problems in various industries.
       </p>
-    </div>
-  </section>
+    </main>
 
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>&copy; <script>document.write(new Date().getFullYear())</script> AshbySowell LLC.</p>
-    </div>
-  </footer>
+    <footer class="text-center mt-8">
+      <p class="text-gray-700">&copy; <script>document.write(new Date().getFullYear())</script> AshbySowell LLC.</p>
+    </footer>
+  </div>
 </body>
 </html>
